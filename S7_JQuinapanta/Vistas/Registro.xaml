@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S7_JQuinapanta.Vistas.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"></BoxView>
+                <Label Grid.Row="1"  Text=" Nombre"  TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtNombre" Grid.Row="2"   HorizontalOptions="FillAndExpand" Placeholder="nombre" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="0"></BoxView>
+                <Label Grid.Row="3"  Text=" Usuario"  TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtUsuario" Grid.Row="4"   HorizontalOptions="FillAndExpand" Placeholder="usuario" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="5"></BoxView>
+                <Label Grid.Row="6"  Text=" Contraseña" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry x:Name="txtContrasena" Grid.Row="7"  IsPassword="True" Placeholder="Password" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="8"></BoxView>
+                <Button Grid.Row="9" x:Name="btnRegistrar" Text="Inicio" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Clicked="btnRegistrar_Clicked"></Button>
+                </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

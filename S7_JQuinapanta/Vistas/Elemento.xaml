@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S7_JQuinapanta.Vistas.Elemento">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Editar / Eliminar Registro" HorizontalTextAlignment="Center" FontSize="20"/>
+            <Label Text="Id:"  />
+            <Entry x:Name="txtId" Placeholder="ID" Keyboard="Numeric" IsEnabled="False"/>
+            <Label Text="Nombre:" />
+            <Entry x:Name="txtNombre" Placeholder="ingerese el nombre" />
+            <Label Text="Usuario:" />
+            <Entry x:Name="txtUsuario" Placeholder="ingerese el usuario"/>
+            <Label Text="Contrasena:" />
+            <Entry x:Name="txtContrasena" Placeholder="ingerese la contrasena"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnEliminar" Text="ELIMINAR" Clicked="btnEliminar_Clicked" Grid.Column="0"/>
+                <Button x:Name="btnModificar" Text="MODIFICAR" Clicked="btnModificar_Clicked" Grid.Column="1"/>
+                <Button x:Name="btnSalir" Text="SALIR" Clicked="btnSalir_Clicked" Grid.Column="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S7_JQuinapanta.Vistas.ConsultaRegistro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="listado de estudiantes"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
